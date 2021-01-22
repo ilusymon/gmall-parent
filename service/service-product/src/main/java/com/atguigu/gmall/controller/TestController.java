@@ -1,5 +1,6 @@
 package com.atguigu.gmall.controller;
 
+import com.atguigu.gmall.result.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("test")
-    public String test() {
-        return "test";
+    public Result<String> test() {
+        return Result.ok("12345");
     }
 }
