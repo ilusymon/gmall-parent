@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2021/1/22 8:36
  */
 @RestController
-public class TestController {
+public class CategoryController {
 
     @GetMapping("test")
     public Result<String> test() {
